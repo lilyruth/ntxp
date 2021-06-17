@@ -1,0 +1,102 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat+Alternates:wght@300&display=swap');
+
+/* Global styles */
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+h1, h2, h3 {
+ font-family: 'Julius Sans One', sans-serif;
+}
+
+h4, p, a, footer {
+ font-family: 'Montserrat Alternates', sans-serif;
+ color: white!important;
+}
+
+a:hover {
+ color: yellow!important;
+}
+/* hero */
+
+#crapeMyrtle {
+ position: fixed;
+ left: 0;
+ top: 0;
+ min-width: 100%;
+ min-height: 100%;
+
+}
+
+.hero-text {
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ background: rgba(0,0,0,0.5);
+ width: 100%;
+}
+
+.jumbotron {
+ height: 20vh;
+ width: 100vw;
+ background: var(--bs-gradient), center/cover no-repeat url(./img/jumbotron.jpg);
+}
+
+.navbar,
+footer {
+ background: darkmagenta;
+}
+
+.new-color {
+ color: yellow!important;
+}
+
+.fa-leaf {
+ font-size: 1.5rem;
+}
+
+main {
+ background: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)), center/cover no-repeat url(./img/birdie.jpg);
+}
+
+.main-row {
+ min-height: 70vh;
+}
+
+hr {
+ border: none;
+ border-top: 2px solid black;
+ color: black;
+ overflow: visible;
+ text-align: center;
+}
+
+hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+.dark-link:hover {
+  color: darkorchid!important;
+}
+
+@media screen and (min-width: 601px) {
+  .info-main {
+   font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ .info-main {
+  font-size: .9rem;
+ }
+
+}
