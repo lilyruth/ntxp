@@ -41,6 +41,10 @@ a:hover {
  width: 100%;
 }
 
+.bg-caption {
+  background: rgba(0,0,0,0.5);
+}
+
 .jumbotron {
  height: 20vh;
  width: 100vw;
