@@ -65,7 +65,7 @@ footer {
 }
 
 main {
- background: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)), center/cover no-repeat url(./img/birdie.jpg);
+ background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), center/cover no-repeat url(./img/birdie.jpg);
 }
 
 .main-row {
@@ -92,15 +92,34 @@ hr:after {
   color: darkorchid!important;
 }
 
+.card-text a:hover {
+  color: darkorchid!important;
+}
+
 @media screen and (min-width: 601px) {
   .info-main {
    font-size: 1.25rem;
+  }
+  .card-width {
+    width: 24rem;
   }
 }
 
 @media screen and (max-width: 600px) {
  .info-main {
   font-size: .9rem;
+ }
+ .card-width {
+   width: 18rem;
+ }
+}
+
+ @media screen and (max-width: 350px) {
+ .info-main {
+  font-size: .8rem;
+ }
+ .card-width {
+   width: 14rem;
  }
 
 }
