@@ -46,13 +46,10 @@
           <a class="nav-link" href="flowers.html">Flowers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nowrap" href="covers.html">Ground Covers</a>
+          <a class="nav-link text-nowrap" href="ground.html">Ground Covers & Mulch</a>
         </li>
            <li class="nav-item">
           <a class="nav-link" href="houseplants.html">Houseplants</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mulching.html">Mulching</a>
         </li>
          <li class="nav-item">
           <a class="nav-link" href="nurseries.html">Nurseries</a>
@@ -92,11 +89,30 @@
        <div class="card mx-auto shadow-lg  card-width">
         <img src="./img/topgun.jpg" class="card-img-top" alt="Top Gun Rose">
           <div class="card-body">
-            <p class="card-text text-dark text-center">Although beautiful, many roses are prone to <span type="button" class="btn-info" data-toggle="tooltip" data-placement="top" data-html="true" title="Rose Rosette Disease is a virus that is spread by a mite. Consensus is currently that the best way to control it is to uproot the affected shrub and not re-plant a rose variety in that location.">Rose Rosette Disease</span>. The <a href="https://www.covingtonnursery.com/gardening/rose-top-gun/" class="text-dark" target="_blank">Top Gun</a> variety is more resistant than other roses.</p>
+            <p class="card-text text-dark text-center">Although beautiful, many roses are prone to <a class="text-dark pointer" data-bs-toggle="modal" data-bs-target="#rosetteModal">Rose Rosette Disease</a>. The <a href="https://www.covingtonnursery.com/gardening/rose-top-gun/" class="text-dark" target="_blank">Top Gun</a> variety is more resistant than other roses.</p>
           </div>
         </div>
      
       </div>     
+
+      <!-- Modal -->
+
+      <div class="modal" id="rosetteModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header text-white">
+              <h5 class="modal-title">Rose Rosette Disease</h5>
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="text-dark">Rose Rosette Disease is a virus that is spread by a mite. Current consensus is that the best way to control it is to uproot the affected shrub and not re-plant a rose variety in that location.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Modal -->
 
     <!-- Third Slide -->
 

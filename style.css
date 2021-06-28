@@ -45,6 +45,11 @@ a:hover {
   background: rgba(0,0,0,0.5);
 }
 
+.col-bg {
+  background: center/cover no-repeat url(./img/newBackground.gif);
+  height: 100vh;
+  width: 100vw; 
+}
 .jumbotron {
  height: 20vh;
  width: 100vw;
@@ -89,11 +94,20 @@ hr:after {
 }
 
 .dark-link:hover {
-  color: darkorchid!important;
+  color: darkmagenta!important;
 }
 
 .card-text a:hover {
-  color: darkorchid!important;
+  color: darkmagenta!important;
+}
+
+.modal-header {
+  background: darkmagenta!important;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 601px) {
