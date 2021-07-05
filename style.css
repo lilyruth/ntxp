@@ -110,6 +110,24 @@ hr:after {
   cursor: pointer;
 }
 
+.rounded-card {
+  border-radius: 50px;
+}
+
+.rounded-card-top {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+form {
+  max-width: 25rem;
+}
+@media screen and (min-width: 992px) {
+  form {
+  margin-left: .75rem;
+  }
+}
+
 @media screen and (min-width: 601px) {
   .info-main {
    font-size: 1.25rem;

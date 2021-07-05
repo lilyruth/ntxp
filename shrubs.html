@@ -55,7 +55,11 @@
           <a class="nav-link" href="nurseries.html">Nurseries</a>
         </li>
       </ul>
-     
+    <!-- Search bar -->
+      <form class="d-flex">
+      <input type="search" aria-label="Search" class="form-control me-2" id="input" required>
+      <button class="btn btn-outline-light" type="submit" id="submit">Search</button>
+    </form>
     </div>
   </div>
 </nav>
@@ -70,8 +74,8 @@
 
      <!-- First Slide -->
       <div class="carousel-item active">
-         <div class="card mx-auto shadow-lg  card-width">
-        <img src="./img/vitex.jpg" class="card-img-top" alt="Vitex">
+         <div class="card rounded-card mx-auto shadow-lg  card-width">
+        <img src="./img/vitex.jpg" class="card-img-top rounded-card-top" alt="Vitex">
           <div class="card-body">
             <p class="card-text text-dark text-center">The vitex shrub is deciduous and can grow up to 15 feet tall. When in bloom, it has an enchanting fragrance. Vitex is drought tolerant.</p>
           </div>
@@ -82,8 +86,8 @@
 
       <div class="carousel-item">
 
-       <div class="card mx-auto shadow-lg  card-width">
-        <img src="./img/topgun.jpg" class="card-img-top" alt="Top Gun Rose">
+       <div class="card rounded-card mx-auto shadow-lg card-width">
+        <img src="./img/topgun.jpg" class="card-img-top rounded-card-top" alt="Top Gun Rose">
           <div class="card-body">
             <p class="card-text text-dark text-center">Although beautiful, many roses are prone to <a class="text-dark pointer" data-bs-toggle="modal" data-bs-target="#rosetteModal">Rose Rosette Disease</a>. The <a href="https://www.covingtonnursery.com/gardening/rose-top-gun/" class="text-dark" target="_blank">Top Gun</a> variety is more resistant than other roses.</p>
           </div>
@@ -94,7 +98,7 @@
       <!-- Modal -->
 
       <div class="modal" id="rosetteModal" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog  modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header text-white">
               <h5 class="modal-title">Rose Rosette Disease</h5>
@@ -114,8 +118,8 @@
 
     <div class="carousel-item">
 
-       <div class="card mx-auto shadow-lg  card-width">
-        <img src="./img/box.jpg" class="card-img-top" alt="Boxwood">
+       <div class="card rounded-card mx-auto shadow-lg  card-width">
+        <img src="./img/box.jpg" class="card-img-top rounded-card-top" alt="Boxwood">
           <div class="card-body">
             <p class="card-text text-dark text-center">Boxwood shrubs don't get enough love. They can grow in almost any condition. They can be shaped and serve as an uncomplaining evergreen backdrop for flowers.</p>
           </div>
@@ -127,8 +131,8 @@
 
       <div class="carousel-item">
 
-       <div class="card mx-auto shadow-lg  card-width">
-        <img src="./img/ligustrum.jpg" class="card-img-top" alt="Ligustrum">
+       <div class="card rounded-card mx-auto shadow-lg  card-width">
+        <img src="./img/ligustrum.jpg" class="card-img-top rounded-card-top" alt="Ligustrum">
           <div class="card-body">
             <p class="card-text text-dark text-center">Privet is an evergreen, versatile shrub with multiple popular varieties, including Sunshine, which is a bright gold color, and variegated. Privet can be happy in many places, including in pots or as a hedge.</p>
           </div>
@@ -140,8 +144,8 @@
 
       <div class="carousel-item">
 
-       <div class="card mx-auto shadow-lg  card-width">
-        <img src="./img/quince.jpg" class="card-img-top" alt="quince">
+       <div class="card rounded-card mx-auto shadow-lg  card-width">
+        <img src="./img/quince.jpg" class="card-img-top rounded-card-top rounded-card-top" alt="quince">
           <div class="card-body">
             <p class="card-text text-dark text-center">In early spring, quince will bloom before the leaves grow. The sprinkling of color is enchanting. <a href="" class="text-dark" target="_blank">Many quince varieties even produce an edible fruit!</a></p>
           </div>
@@ -172,7 +176,7 @@
  </footer>
 
    <!-- JavaScript -->
-
+<script src="app.js"></script> 
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -180,6 +184,6 @@
 
 
   
- 
+
   </body>
 </html>
