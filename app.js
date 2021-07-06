@@ -9,12 +9,14 @@ const closeButton = document.getElementById('close-no-results');
 
 const backdrop = document.querySelector('body');
 
-// Modal covers the entire page which is why this function applied to the body wasn't working. Thank you dev tools!
+
 
 submit.addEventListener('click', function (e) {
  e.preventDefault();
  searchProgram();
 });
+
+// Modal covers the entire page which is why this function applied to the body wasn't working. Thank you dev tools!
 
 // closeButton.addEventListener('click', () => { noResults.style.display = 'none'; });
 
