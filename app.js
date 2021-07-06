@@ -5,9 +5,57 @@ const inputField = document.getElementById('input');
 
 const noResults = document.getElementById('noResultsModal');
 
-const closeButton = document.getElementById('close-no-results');
+const modalBody = document.querySelector('.modal-body')
 
-const backdrop = document.querySelector('body');
+// const closeButton = document.getElementById('close-no-results');
+
+const darkMode = document.getElementById('dark-mode');
+
+const lightMode = document.getElementById('dark-mode-off');
+
+const main = document.querySelector('main');
+
+const modalSearchText = document.getElementById('search-text');
+
+
+
+
+//Dark Mode for Content & Nursery Pages & Search Results Modal
+darkMode.addEventListener('click', () => {
+
+  // button
+  darkMode.classList.add('off');
+  lightMode.classList.remove('off');
+
+  // background
+  main.classList.add('dark-mode-main');
+
+  // search results modal 
+  modalBody.classList.add('bg-dark');
+  modalSearchText.classList.remove('text-dark');
+  modalSearchText.classList.add('text-white');
+
+});
+
+
+
+lightMode.addEventListener('click', () => {
+	//button
+	darkMode.classList.remove('off');
+	lightMode.classList.add('off');
+
+	//background
+	main.classList.remove('dark-mode-main');
+
+	//search results modal
+	modalBody.classList.add('bg-dark');
+	modalSearchText.classList.remove('text-white');
+	modalSearchText.classList.add('text-dark');
+
+});
+
+
+
 
 
 

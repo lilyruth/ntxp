@@ -54,6 +54,14 @@
          <li class="nav-item">
           <a class="nav-link" href="nurseries.html">Nurseries</a>
         </li>
+
+         <li class="nav-item">
+          <button class="badge bg-light text-dark rounded-pill mt-2" id="dark-mode">Dark Mode On</button>
+          </li>
+
+          <li class="nav-item">
+          <button class="badge bg-dark rounded-pill mt-2 off" id="dark-mode-off">Dark Mode Off</button>
+          </li>
       </ul>
     <!-- Search bar -->
       <form class="d-flex">
@@ -74,7 +82,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <p class="text-dark">There are no results. Please try again.</p>
+              <p id="search-text" class="text-dark">There are no results. Please try again.</p>
             </div>
           </div>
         </div>
@@ -94,8 +102,8 @@
       <div class="carousel-item active">
          <div class="card rounded-card mx-auto shadow-lg  card-width">
         <img src="./img/vitex.jpg" class="card-img-top rounded-card-top" alt="Vitex">
-          <div class="card-body">
-            <p class="card-text text-dark text-center">The vitex shrub is deciduous and can grow up to 15 feet tall. When in bloom, it has an enchanting fragrance. Vitex is drought tolerant.</p>
+          <div class="card-body slide-1">
+            <p class="card-text text-dark text-center text-1">The vitex shrub is deciduous and can grow up to 15 feet tall. When in bloom, it has an enchanting fragrance. Vitex is drought tolerant.</p>
           </div>
         </div>
       </div>
@@ -106,8 +114,8 @@
 
        <div class="card rounded-card mx-auto shadow-lg card-width">
         <img src="./img/topgun.jpg" class="card-img-top rounded-card-top" alt="Top Gun Rose">
-          <div class="card-body">
-            <p class="card-text text-dark text-center">Although beautiful, many roses are prone to <a class="text-dark pointer" data-bs-toggle="modal" data-bs-target="#rosetteModal">Rose Rosette Disease</a>. The <a href="https://www.covingtonnursery.com/gardening/rose-top-gun/" class="text-dark" target="_blank">Top Gun</a> variety is more resistant than other roses.</p>
+          <div class="card-body slide-2">
+            <p class="card-text text-dark text-center text-2">Although beautiful, many roses are prone to <a class="text-dark pointer link-2" data-bs-toggle="modal" data-bs-target="#rosetteModal">Rose Rosette Disease</a>. The <a href="https://www.covingtonnursery.com/gardening/rose-top-gun/" class="text-dark link-1" target="_blank">Top Gun</a> variety is more resistant than other roses.</p>
           </div>
         </div>
      
@@ -123,8 +131,8 @@
               <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close">
               </button>
             </div>
-            <div class="modal-body">
-              <p class="text-dark">Rose Rosette Disease is a virus that is spread by a mite. Current consensus is that the best way to control it is to uproot the affected shrub and not re-plant a rose variety in that location.</p>
+            <div class="modal-body rose-body">
+              <p class="rose-text text-dark">Rose Rosette Disease is a virus that is spread by a mite. Current consensus is that the best way to control it is to uproot the affected shrub and not re-plant a rose variety in that location.</p>
             </div>
           </div>
         </div>
@@ -138,8 +146,8 @@
 
        <div class="card rounded-card mx-auto shadow-lg  card-width">
         <img src="./img/box.jpg" class="card-img-top rounded-card-top" alt="Boxwood">
-          <div class="card-body">
-            <p class="card-text text-dark text-center">Boxwood shrubs don't get enough love. They can grow in almost any condition. They can be shaped and serve as an uncomplaining evergreen backdrop for flowers.</p>
+          <div class="card-body slide-3">
+            <p class="card-text text-dark text-center text-3">Boxwood shrubs don't get enough love. They can grow in almost any condition. They can be shaped and serve as an uncomplaining evergreen backdrop for flowers.</p>
           </div>
         </div>
      
@@ -151,8 +159,8 @@
 
        <div class="card rounded-card mx-auto shadow-lg  card-width">
         <img src="./img/ligustrum.jpg" class="card-img-top rounded-card-top" alt="Ligustrum">
-          <div class="card-body">
-            <p class="card-text text-dark text-center">Privet is an evergreen, versatile shrub with multiple popular varieties, including Sunshine, which is a bright gold color, and variegated. Privet can be happy in many places, including in pots or as a hedge.</p>
+          <div class="card-body slide-4">
+            <p class="card-text text-dark text-center text-4">Privet is an evergreen, versatile shrub with multiple popular varieties, including Sunshine, which is a bright gold color, and variegated. Privet can be happy in many places, including in pots or as a hedge.</p>
           </div>
         </div>
      
@@ -164,8 +172,8 @@
 
        <div class="card rounded-card mx-auto shadow-lg  card-width">
         <img src="./img/quince.jpg" class="card-img-top rounded-card-top rounded-card-top" alt="quince">
-          <div class="card-body">
-            <p class="card-text text-dark text-center">In early spring, quince will bloom before the leaves grow. The sprinkling of color is enchanting. <a href="" class="text-dark" target="_blank">Many quince varieties even produce an edible fruit!</a></p>
+          <div class="card-body slide-5">
+            <p class="card-text text-dark text-center text-5">In early spring, quince will bloom before the leaves grow. The sprinkling of color is enchanting. <a href="" class="text-dark" target="_blank">Many quince varieties even produce an edible fruit!</a></p>
           </div>
         </div>
      
@@ -201,6 +209,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
 
 <script src="app.js"></script> 
+<script src="darkModeSlidesPages.js"></script> 
   
 
   </body>

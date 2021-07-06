@@ -22,6 +22,9 @@ h4, p, a, footer {
 a:hover {
  color: yellow!important;
 }
+
+
+
 /* hero */
 
 #crapeMyrtle {
@@ -73,6 +76,10 @@ main {
  background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), center/cover no-repeat url(./img/birdie.jpg);
 }
 
+.dark-mode-main {
+ background: linear-gradient(rgba(97, 102, 99, 0.7),rgba(97, 102, 99,.7)), center/cover no-repeat url(./img/birdie.jpg);
+}
+
 .main-row {
  min-height: 70vh;
 }
@@ -93,13 +100,10 @@ hr:after {
     top: -13px;
 }
 
-.dark-link:hover {
+.text-dark a:hover {
   color: darkmagenta!important;
 }
 
-.card-text a:hover {
-  color: darkmagenta!important;
-}
 
 .modal-header {
   background: darkmagenta!important;
@@ -114,6 +118,11 @@ hr:after {
   border-radius: 50px;
 }
 
+.card-body {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
 .rounded-card-top {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -123,12 +132,31 @@ hr:after {
   background: #198754!important;
 }
 
+.off {
+  display: none;
+}
+
+.map-dark {
+  background: darkslategray!important;
+}
+
+.dark-mode-link:hover {
+ color: yellow!important;
+}
+
+
 form {
   max-width: 25rem;
 }
 @media screen and (min-width: 992px) {
   form {
   margin-left: .75rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  form {
+  margin-top: 1.25rem;
   }
 }
 
